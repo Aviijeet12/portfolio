@@ -440,13 +440,99 @@ nav ul li a:hover::after {
 #contact form .btn2:hover {
     background: #ff3366;
 }
+/* Add this media query at the end of your existing CSS */
+@media screen and (max-width: 520px) {  
+    body {  
+        margin: 0;  
+        padding: 0;  
+        max-width: 100%;  
+    }  
 
-@media (max-width: 768px) {
-    .header-text {
-        font-size: 24px;
-    }
+    .container {  
+        max-width: 100%;  
+        padding: 0 5%; /* Adjust padding for small screens */  
+        margin: 0 auto;  
+        text-align: center;  
+    }  
 
-    .header-text h1 {
-        font-size: 40px;
-    }
+    /* Header Text */  
+    .header-text {  
+        font-size: 24px; /* Smaller font size for mobile */  
+        padding: 10px;  
+    }  
+
+    .header-text h1 {  
+        font-size: 36px; /* Adjusted for mobile */  
+    }  
+
+    /* Navigation */  
+    nav ul li {  
+        margin: 5px 0; /* Stack navigation items */  
+    }  
+
+    nav ul li a {  
+        font-size: 16px; /* Smaller font size */  
+    }  
+
+    /* About Section */  
+    #about {  
+        padding: 40px 10px; /* Reduced padding */  
+    }  
+
+    .about-col-1,  
+    .about-col-2 {  
+        flex-basis: 100%; /* Stack columns on mobile */  
+        padding: 0; /* Remove padding */  
+    }  
+
+    /* Tab Titles */  
+    .tab-titles {  
+        flex-direction: column; /* Stack tab titles */  
+        align-items: center;  
+    }  
+
+    .tab-links {  
+        margin: 10px 0; /* Adjust margin */  
+        font-size: 16px; /* Smaller font size */  
+    }  
+
+    /* Services List */  
+    .services-list {  
+        grid-template-columns: 1fr; /* Single column layout */  
+        margin-top: 20px; /* Reduced margin */  
+    }  
+
+    /* Portfolio Section */  
+    .work-list {  
+        flex-direction: column; /* Stack work items */  
+        align-items: center; /* Center items */  
+        margin-top: 20px; /* Reduced margin */  
+    }  
+
+    .work {  
+        flex: 0 1 90%; /* Increase width on mobile */  
+        margin: 10px 0; /* Vertical margin */  
+    }  
+
+    /* Contact Section */  
+    #contact {  
+        padding: 20px 10px; /* Adjust padding */  
+    }  
+
+    #contact form input,  
+    #contact form textarea {  
+        font-size: 16px; /* Smaller font size */  
+    }  
+
+    #contact form .btn2 {  
+        padding: 12px 40px; /* Adjust button size */  
+        font-size: 16px; /* Smaller font size */  
+    }  
+
+    
+    .btn {  
+        display: block;  
+        margin: 1.25rem auto;  
+        text-align: center;  
+    }  
 }
